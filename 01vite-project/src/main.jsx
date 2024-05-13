@@ -2,8 +2,24 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+
+function MyApp(){
+  return(
+    <div>
+      <h1>Custom App | Pradeep</h1>
+    </div>
+  )
+}
+
+const anotherElement = (
+  <a href="https://google.com" target='_blank'>Visit Google</a>
 )
+ReactDOM.createRoot(document.getElementById('root')).
+render(
+  // <MyApp />
+
+  anotherElement
+
+)
+
+
