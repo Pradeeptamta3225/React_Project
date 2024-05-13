@@ -12,13 +12,20 @@ function MyApp(){
 }
 
 const anotherElement = (
-  <a href="https://google.com" target='_blank'>Visit Google</a>
+  <a href="https://google.com" target= '_blank'>Visit Google</a>
+)
+
+const reactElement = React.createElement(
+  'a',
+  {href: 'https://google.com', target: '_blank'},
+  'click visit to google'
 )
 ReactDOM.createRoot(document.getElementById('root')).
 render(
   // <MyApp />
 
-  anotherElement
+  // anotherElement
+  reactElement
 
 )
 
