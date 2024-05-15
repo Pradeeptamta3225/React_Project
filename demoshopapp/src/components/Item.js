@@ -1,8 +1,9 @@
 import './Item.css'
 
-function Item(){
+function Item(props){
+    const itemName = props.name;
     return (
-        <p className="lang">Hello React</p>
+        <p className="lang">{itemName}</p>
     )
 }
 
