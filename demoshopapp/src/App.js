@@ -20,6 +20,12 @@ function App() {
       itemYear: "2010"
     },
     {
+      itemName: "Arial",
+      itemDate: "15",
+      itemMonth: "June",
+      itemYear: "2020"
+    },
+    {
       itemName: "Tide",
       itemDate: "30",
       itemMonth: "April",
