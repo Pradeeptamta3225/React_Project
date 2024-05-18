@@ -32,6 +32,12 @@ function App() {
       itemYear: "2025"
     },
     {
+      itemName: "Rin",
+      itemDate: "05",
+      itemMonth: "Nov",
+      itemYear: "2005"
+    },
+    {
       itemName: "Tide",
       itemDate: "30",
       itemMonth: "April",
@@ -57,6 +63,9 @@ function App() {
 
       <Item name={response[4].itemName} ></Item>
       <ItemDate day={response[4].itemDate} month={response[4].itemMonth} year={response[4].itemYear}></ItemDate>
+
+      <Item name={response[5].itemName} ></Item>
+      <ItemDate day={response[5].itemDate} month={response[5].itemMonth} year={response[5].itemYear}></ItemDate>
       <div className="App">Hello Pradeep !</div>
       </Card>
       
