@@ -66,7 +66,7 @@ function App() {
 
       <Item name={response[5].itemName} ></Item>
       <ItemDate day={response[5].itemDate} month={response[5].itemMonth} year={response[5].itemYear}></ItemDate>
-      <div className="App">Hello Pradeep !How r u  !</div>
+      <div className="App">Hello Pradeep !</div>
       </Card>
       
     </div>
