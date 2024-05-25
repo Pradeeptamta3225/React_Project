@@ -26,7 +26,9 @@ const removeValue = () => {
   if (counter > 0) {
     counter = counter - 1
     setCounter(counter)
-
+if (counter <= 0 ) {
+  alert("You not going to below 0")
+}
     
   }
 }
