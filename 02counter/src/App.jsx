@@ -13,6 +13,10 @@ function App() {
     if (counter < 10) {
       counter = counter + 1
       setCounter(counter)
+
+      if (counter >= 10) {
+        alert("You Have reaced Maximum Value")
+      }
     }
   }
 
@@ -22,16 +26,20 @@ const removeValue = () => {
   if (counter > 0) {
     counter = counter - 1
     setCounter(counter)
+
+    
   }
 }
 
 
   return (
     <>
-      <h1>Hi Pradeep</h1>
-      <h2>counter Value : {counter} </h2>
+      <h1 className='text'>Hi Pradeep</h1>
+      <h2 className='text'>counter Value : {counter} </h2>
       <button onClick={addValue}>Increase {counter}</button>
       <button onClick={removeValue}>Decrease</button>
+
+      <h3>Maximum Value is 10</h3>
     </>
   )
 }
