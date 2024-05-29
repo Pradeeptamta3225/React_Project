@@ -13,11 +13,11 @@ function App() {
     let str = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     if (numberCheck) {
-      str += "0123456789"
+      str += "0123456789" 
     }
 
     if (charCheck) {
-      str += "@!#$%^&*()_+~"
+      str += "@!#$%^&*()_+~~"
     }
   },[length, charCheck, numberCheck , setPassword])
 
