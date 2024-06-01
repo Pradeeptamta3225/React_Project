@@ -72,7 +72,6 @@ function App() {
       <div className="flex items-center gap-x-1">
           <input
               type="checkbox"
-              placeholder='type here'
           />
           <label htmlFor="characterInput">Characters</label>
       </div>
