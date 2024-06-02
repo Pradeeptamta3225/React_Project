@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useEffect } from 'react'
 import './App.css'
 
 function App() {
@@ -20,17 +20,18 @@ function App() {
       str += "@!#$%^&*()_+~~"
     }
 
-    for (let i = 1; i <= array.length; i++) {
+    for (let i = 1; i <= length; i++) {
       let char = Math.floor(Math.random() * str.length + 1);
      
-      pass = str.charAt(char);
+      pass += str.charAt(char);
       setPassword(pass);
       
     }
   },[length, charCheck, numberCheck , setPassword])
 
   
-
+useEffect(() => {passwordGenerator()}
+,[length, numberCheck,charCheck,passwordGenerator])
 
   return (
     <>
@@ -54,8 +55,8 @@ function App() {
       <div className='flex items-center gap-x-1'>
         <input 
         type="range"
-        min={6}
-        max={100}
+        min={8}
+        max={12}
         value={length}
          className='cursor-pointer'
          onChange={(e) => {setLength(e.target.value)}}
@@ -66,14 +67,17 @@ function App() {
       <input
           type="checkbox"
           id="numberInput"
+          onClick={() => {setNumberCheck((prev) => !prev)}}
       />
       <label htmlFor="numberInput">Numbers</label>
       </div>
       <div className="flex items-center gap-x-1">
-          <input
-              type="checkbox"
-          />
-          <label htmlFor="characterInput">Characters</label>
+      <input
+          type="checkbox"
+          id="numberInput"
+          onClick={() => {setCharCheck((prev) => !prev)}}
+      />
+      <label htmlFor="numberInput">Charactor</label>
       </div>
     </div>
 </div>
