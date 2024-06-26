@@ -31,7 +31,7 @@ const App = () => {
   ];
 
   function printProductData(data) {
-    console.log("i am inside APP.js")
+    console.log("i'm inside APP.js")
     console.log(data)
   }
 
