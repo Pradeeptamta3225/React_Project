@@ -4,7 +4,7 @@ export default function Github(){
 
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch('https://api.github.com/users/Rohitb1107')
+        fetch('https://api.github.com/users/pradeeptamta3225')
         .then(response => response.json())
         .then(data => {
             setData(data)
@@ -18,3 +18,5 @@ export default function Github(){
        <img className="rounded-full" src={data.avatar_url} alt="Git picture" width={300} /> </div>
     )
 }
+
+
