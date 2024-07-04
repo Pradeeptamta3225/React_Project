@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 
 export default function Github(){
 
+
+    // const [loading , setLoading] = useState(true)
+
+    // const [error , setError] = useState(null)
+
     const [data, setData] = useState([])
     useEffect(() => {
         fetch('https://api.github.com/users/pradeeptamta3225')
@@ -11,6 +16,21 @@ export default function Github(){
         })
     }, [])
 
+
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       try {
+    //         const response = await fetch('https://api.github.com/users/pradeeptamta3225')
+    //         setData(response.data);
+    //         setLoading(false);
+    //       } catch (error) {
+    //         setError(error);
+    //         setLoading(false);
+    //       }
+    //     };
+    
+    //     fetchData();
+    //   }, []);
 
 
     return(
