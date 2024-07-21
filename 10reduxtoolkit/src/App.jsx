@@ -1,11 +1,15 @@
+
 import './App.css'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 
 function App() {
- 
-
+  
   return (
     <>
-     <div>Learn Redux toolkit in React</div>
+      <h1>Learn about redux toolkit</h1>
+      <AddTodo />
+      <Todos />
     </>
   )
 }
