@@ -11,7 +11,7 @@ export default function App() {
         className="object-cover w-full h-full"
       />
       <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-white text-2xl font-bold">ToDo App | Pradeep </span>
+        <span className="text-white text-2xl font-bold ">ToDo App | Pradeep </span>
       </div>
     </div>
      {/* <div>
