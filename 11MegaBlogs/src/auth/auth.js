@@ -3,16 +3,16 @@ import { Client, Account, ID } from "appwrite";
 
 
 export class AuthService {
-    Client = new Client();
+    client = new Client();
     account;
 
 
 
     constructor(){
-        this.Client
+        this.client
         .setEndpoint(conf.appwriteUrl)
-        .setProject(conf. appwriteProjectId)
-        this.Account = new Account(this.Client)
+        .setProject(conf.appwriteProjectId)
+        this.Account = new Account(this.client)
 
     }
 
