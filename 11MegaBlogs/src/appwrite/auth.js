@@ -33,11 +33,15 @@ export class AuthService {
     }
 
 
-    async getUser (email, password){
-        return await this.account.get(email,password)
+    async getCurrentUser (){
+        return await this.account.get()
     }
 
     async logout (){
         return await this.account.deleteSessions();
     }
 }
+
+const authService = new AuthService();
+
+export default authService
