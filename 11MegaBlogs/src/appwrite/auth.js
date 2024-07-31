@@ -29,16 +29,31 @@ export class AuthService {
     }
 
     async login (){
-        return await this.account.createEmailPasswordSession()
+       
+        try {
+            return await this.account.createEmailPasswordSession()
+        } catch (error) {
+            console.log("Appwrite serive :: login :: error", error);
+        }
     }
 
 
     async getCurrentUser (){
-        return await this.account.get()
+       
+        try {
+            return await this.account.get()
+        } catch (error) {
+            console.log("Appwrite serive :: getCurrentUser :: error", error);
+        }
     }
 
     async logout (){
-        return await this.account.deleteSessions();
+      
+        try {
+            return await this.account.deleteSessions();
+        } catch (error) {
+            console.log("Appwrite serive :: deleteSessions :: error", error);
+        }
     }
 }
 
